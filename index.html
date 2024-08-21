@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="bg-white">
+  <nav class="bg-white shadow">
+    <div class="p-5 flex justify-between items-center">
+      <span>
+        <a href=""><img class="h-10 inline cursor-pointer" src="https://aitech.lk/img/logo.png" alt=""></a>
+      </span>
+
+      <span class="text-5xl cursor-pointer mx-2">
+        <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+      </span>
+
+    </div>
+
+    <ul id="mainMenuTitle" class="lg:grid lg:grid-cols-4 lg:items-start lg:pl-5 z-[-1] static absolute bg-gray-700 w-full left-0 opacity-0 top-[-400px] left-0 py-0 pl-0 transition-all ease-in-out duration-700 lg:duration-500">
+    <!-- <ul class="md:grid md:grid-cols-4 md:items-center z-[-1] md:z-auto md:static absolute bg-gray-700 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 opacity-0 top-[-400px] transition-all ease-in duration-500"> -->
+      <li class="mx-4 mt-10 lg:mt-10">
+        <div class="flex justify-between">
+          <a href="#" class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white hover:text-[#173c72] duration-500">Digital</a>
+          <span class="lg:hidden block text-4xl text-gray-400">
+            <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle1')"></ion-icon>
+          </span>
+        </div>
+        <ul id="subMenuTitle1" class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+        </ul>
+      </li>
+
+      <li class="mx-4 mt-0 lg:mt-10">
+        <div class="flex justify-between">
+          <a href="#" class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white hover:text-[#173c72] duration-500">Web</a>
+          <span class="lg:hidden block text-4xl text-gray-400">
+            <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle2')"></ion-icon>
+          </span>
+        </div>
+        <ul id="subMenuTitle2" class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+        </ul>
+      </li>
+
+      <li class="mx-4 mt-0 lg:mt-10">
+        <div class="flex justify-between">
+          <a href="#" class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white hover:text-[#173c72] duration-500">Development</a>
+          <span class="lg:hidden block text-4xl text-gray-400">
+            <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle3')"></ion-icon>
+          </span>
+        </div>
+        <ul id="subMenuTitle3" class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+        </ul>
+      </li>
+
+      <li class="mx-4 mt-0 lg:mt-10">
+        <div class="flex justify-between">
+          <a href="#" class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white hover:text-[#173c72] duration-500">Studio</a>
+          <span class="lg:hidden block text-4xl text-gray-400">
+            <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle4')"></ion-icon>
+          </span>
+        </div>
+        <ul id="subMenuTitle4" class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+        </ul>
+      </li>
+
+      <li class="mx-4 mt-0 lg:mt-10">
+        <div class="flex justify-between">
+          <a href="#" class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white hover:text-[#173c72] duration-500">Events</a>
+          <span class="lg:hidden block text-4xl text-gray-400">
+            <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle5')"></ion-icon>
+          </span>
+        </div>
+        <ul id="subMenuTitle5" class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+        </ul>
+      </li>
+
+      <li class="mx-4 mt-0 lg:mt-10">
+        <div class="flex justify-between">
+          <a href="#" class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white hover:text-[#173c72] duration-500">Industries</a>
+          <span class="lg:hidden block text-4xl text-gray-400">
+            <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle6')"></ion-icon>
+          </span>
+        </div>
+        <ul id="subMenuTitle6" class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+        </ul>
+      </li>
+    
+      <li class="mx-4 mt-0 lg:mt-10">
+        <div class="flex justify-between">
+          <a href="#" class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white hover:text-[#173c72] duration-500">About Us</a>
+          <!-- <span class="lg:hidden block text-4xl text-gray-400">
+            <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle7')"></ion-icon>
+          </span> -->
+        </div>
+        <ul id="subMenuTitle7" class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+          <!-- <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li> -->
+        </ul>
+      </li>
+
+      <li class="mx-4 mt-0 lg:mt-10">
+        <div class="flex justify-between">
+          <a href="#" class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white hover:text-[#173c72] duration-500">Blog</a>
+          <span class="lg:hidden block text-4xl text-gray-400">
+            <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle8')"></ion-icon>
+          </span>
+        </div>
+        <ul id="subMenuTitle8" class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+        </ul>
+      </li>
+
+      <li class="mx-4 mt-0 lg:mt-10">
+        <div class="flex justify-between">
+          <a href="#" class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white hover:text-[#173c72] duration-500">Contact</a>
+          <!-- <span class="lg:hidden block text-4xl text-gray-400">
+            <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle9')"></ion-icon>
+          </span> -->
+        </div>
+        <ul id="subMenuTitle9" class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+          <!-- <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li> -->
+        </ul>
+      </li>
+
+      <li class="mx-4 mt-0 lg:mt-10">
+        <div class="flex justify-between">
+          <a href="#" class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white hover:text-[#173c72] duration-500">Careers</a>
+          <!-- <span class="lg:hidden block text-4xl text-gray-400">
+            <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle10')"></ion-icon>
+          </span> -->
+        </div>
+        <ul id="subMenuTitle10" class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+          <!-- <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li>
+          <li>SMM</li>
+          <li>SMO</li>
+          <li>LG</li>
+          <li>GD</li>
+          <li>SEO</li> -->
+        </ul>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <script>
+    function Menu(e) {
+      let list = document.querySelector('#mainMenuTitle');
+
+      e.name === 'menu-outline' ? (e.name = "close-outline", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) :( e.name = "menu-outline", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'));
+    }
+  </script>
+
+<script>
+  // function SubMenu(e) {
+  //   let list = document.querySelector('#subMenuTitle');
+    
+  //   if (e.name === 'add-outline') {
+  //     e.name = 'remove-outline';
+  //     list.classList.remove('hidden');
+  //   } else {
+  //     e.name = 'add-outline';
+  //     list.classList.add('hidden');
+  //   }
+  // }
+
+  function SubMenu(e, subMenuId) {
+  let list = document.getElementById(subMenuId);
+  
+  if (window.innerWidth < 1024) { 
+    if (e.name === 'add-outline') {
+      e.name = 'remove-outline';
+      list.classList.remove('opacity-0', 'max-h-0', 'overflow-hidden');
+      list.classList.add('opacity-100', 'max-h-[1000px]', 'overflow-auto');
+    } else {
+      e.name = 'add-outline';
+      list.classList.add('opacity-0', 'max-h-0', 'overflow-hidden');
+      list.classList.remove('opacity-100', 'max-h-[1000px]', 'overflow-auto');
+    }
+  }
+}
+</script>
+
+</body>
+</html>
